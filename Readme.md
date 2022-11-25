@@ -31,7 +31,7 @@ react-native run-android
  react-native run-ios
 ```
 
-## Features
+## Packages
 
 - React Native
 - TypeScript
