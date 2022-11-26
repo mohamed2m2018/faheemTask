@@ -13,10 +13,14 @@ const renderRow = (row: RowData) =>
   row?.map(({value, type}) => {
     switch (type) {
       case 'image':
-        return <Image style={styles.image} source={{uri: value}} />;
+        return <Image key={value} style={styles.image} source={{uri: value}} />;
 
       default:
-        return <Text style={styles.text}>{value}</Text>;
+        return (
+          <Text key={value} style={styles.text}>
+            {value}
+          </Text>
+        );
     }
   });
 
