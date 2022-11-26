@@ -11,5 +11,6 @@ export const styles = StyleSheet.create({
   subTitle: {textAlign: 'center', fontSize: 17},
   spacingWrapper: {
     marginVertical: 20,
+    alignSelf: 'center',
   },
 });
