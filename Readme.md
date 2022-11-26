@@ -12,9 +12,10 @@ Discover Movies and TV shows
 ```sh
   git clone https://github.com/mohamed2m2018/faheemTask
 
-  npm install or yarn install
+  npm install or yarn
 
-  npm start
+  npm start or yarn start
+
 ```
 
 ## Run on Android
