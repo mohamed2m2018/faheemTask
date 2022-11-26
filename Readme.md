@@ -4,7 +4,8 @@ Discover Movies and TV shows
 
 ## Screenshots
 
-![simulator_screenshot_2F6288C4-F996-4E07-8EBB-2B9642030F3B](https://user-images.githubusercontent.com/33550035/204045315-c22220cf-456b-4be0-8605-3ed8b1725c91.png)
+![simulator_screenshot_4135FBCA-E9BB-47A7-9C9D-FEC623A0DB91](https://user-images.githubusercontent.com/33550035/204081357-00e985e6-7c66-4c0d-8323-9d969fea40b1.png)
+
 
 
 ## Installation
