@@ -1,6 +1,6 @@
 ## Project Overview
 
-Discover Movies and TV shows
+Address book
 
 ## Screenshots
 
