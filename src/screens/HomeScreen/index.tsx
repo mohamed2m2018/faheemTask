@@ -6,7 +6,7 @@ import {
   RefreshControl,
   Button,
 } from 'react-native';
-import React, {useEffect, useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import RadioForm from 'react-native-simple-radio-button';
 import {useGetAddresses} from '../../hooks/useGetAddresses';
 import {filterationValues, sortingValues} from '../../statics/constants';
@@ -21,24 +21,21 @@ const HomeScreen: React.FC = () => {
   const {tableData, isLoading, refetch, isRefetching} =
     useGetAddresses(filterationOption);
 
-  const [sortedData, setSortedData] = useState(tableData);
-
   const filterationOptions = [
     filterationValues.MALE_OPTION,
     filterationValues.FAMALE_OPTION,
     filterationValues.ALL_OPTION,
   ];
 
-  useEffect(() => {
-    const sorted = tableData?.sort((firstItem, secondItem) => {
+  const sortedItems = useMemo(() => {
+    tableData?.sort((firstItem, secondItem) => {
       if (sortingState === sortingValues.ASC) {
         return firstItem[2].value - secondItem[2].value;
       } else {
         return secondItem[2].value - firstItem[2].value;
       }
     });
-    setSortedData(sorted);
-  }, [sortingState]);
+  }, [tableData, sortingState]);
 
   var radio_props = filterationOptions.map((option, index) => ({
     label: `${option}  `,
@@ -80,7 +77,7 @@ const HomeScreen: React.FC = () => {
             <ActivityIndicator size={'large'} color={'black'} />
           </View>
         ) : (
-          <CustomTable tableData={sortedData || tableData} />
+          <CustomTable tableData={sortedItems || tableData} />
         )}
       </ScrollView>
     </View>
