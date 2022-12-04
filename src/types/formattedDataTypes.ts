@@ -4,3 +4,5 @@ export interface Field {
 }
 
 export type RowData = Field[];
+
+export type SortingTypes = 'asc' | 'desc';

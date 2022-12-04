@@ -4,10 +4,15 @@ export const filterationValues = {
   ALL_OPTION: 'All',
 };
 
+export const sortingValues = {
+  ASC: 'asc',
+  Desc: 'desc',
+};
+
 export const tableHeaders = {
   FIRST_HEADER: 'Avatar',
   SECOND_HEADER: 'Name',
-  THIRD_HEADER: 'Email',
+  THIRD_HEADER: 'Age',
 };
 
 export const mediaTypes = {

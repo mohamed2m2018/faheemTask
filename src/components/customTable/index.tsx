@@ -35,14 +35,14 @@ const CustomTable = ({tableData}: Props) => {
         ]}
         style={styles.head}
         textStyle={styles.text}
-        flexArr={[1, 1, 2]}
+        flexArr={[1, 1, 1]}
       />
       {tableData?.map?.((row: RowData, index: number) => (
         <Row
           textStyle={styles.text}
           key={index}
           data={renderRow(row)}
-          flexArr={[1, 1, 2]}
+          flexArr={[1, 1, 1]}
         />
       ))}
     </Table>

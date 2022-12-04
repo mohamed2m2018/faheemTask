@@ -38,7 +38,7 @@ export const useGetAddresses = (filterationOption: string) => {
               item.name.title + ' ' + item.name.first + ' ' + item.name.last,
             type: mediaTypes.TEXT,
           },
-          {value: item.email, type: mediaTypes.TEXT},
+          {value: `${item?.dob?.age}`, type: mediaTypes.TEXT},
         ]);
         return formattedData;
       },
